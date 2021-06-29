@@ -11,20 +11,24 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>Health Track - Login</title>
+    <title>Health Track - Sign up</title>
   </head>
   <body>
     <div class="container centered-container">
       <div class="card" style="width: 32rem">
         <div class="card-header">
-          <h5 class="card-title">Login to the platform</h5>
+          <h5 class="card-title">Sign up to the platform</h5>
           <h6 class="card-subtitle mb-2 text-muted">
-            Login to get access to all our features
+            Create an account to get access to all our features for free
           </h6>
         </div>
 
         <div class="card-body">
           <form>
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Full name</label>
+              <input type="text" class="form-control" id="nameInput" required />
+            </div>
             <div class="mb-3">
               <label for="inputEmail" class="form-label">Email address</label>
               <input
@@ -47,18 +51,16 @@
                 required
               />
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="checkbox" />
-              <label class="form-check-label" for="checkbox"
-                >Keep me signed in</label
-              >
-            </div>
 
             <div class="d-grid">
-              <a href="/index.html" class="btn btn-lg btn-primary"> Login </a>
+              <a href="/login.html" class="btn btn-lg btn-primary">
+                Create my free account
+              </a>
             </div>
 
-            <a href="/sign-up.html" class="form-text">Create a free account</a>
+            <a href="/login.html" class="form-text"
+              >I already have an account</a
+            >
           </form>
         </div>
       </div>
